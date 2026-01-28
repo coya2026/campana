@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Territorio A</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 20px;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    a.volver {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #444;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    a.volver:hover {
+      background: #222;
+    }
+  </style>
+</head>
+<body>
 
+  <h1>Territorio A</h1>
+
+  <img src="imagenes/territorio-a.jpg" alt="Territorio A">
+
+  <p>
+    Aquí va la descripción del territorio, información relevante,
+    instrucciones o contexto.
+  </p>
+
+  <a class="volver" href="index.html">⬅ Volver al menú</a>
+
+</body>
+</html>
