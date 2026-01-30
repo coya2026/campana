@@ -4,18 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Territorios</title>
+
   <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#f0f4f8; padding:20px; }
-    .wrap { max-width: 520px; margin: 0 auto; text-align:center; }
-    h1 { margin: 10px 0 20px; }
-    .botones { display:flex; flex-direction:column; gap:12px; }
-    a.boton {
-      padding: 14px 16px; background:#2b7a0b; color:#fff; text-decoration:none;
-      border-radius: 8px; font-size: 1.05em;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+
+      /* Fondo */
+      background-image: url("imagenes/territorio.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      min-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
     }
-    a.boton:hover { background:#256608; }
-    a.volver { display:inline-block; margin-top:18px; color:#0056b3; text-decoration:none; }
-    a.volver:hover { text-decoration: underline; }
+
+    /* Capa oscura para mejorar lectura */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 0;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+
+      max-width: 520px;
+      margin: 0 auto;
+      text-align: center;
+
+      background: rgba(255,255,255,0.93);
+      padding: 22px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+      margin: 10px 0 20px;
+      color: #222;
+    }
+
+    .botones {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    a.boton {
+      padding: 14px 16px;
+      background: #2b7a0b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1.05em;
+      display: block;
+    }
+
+    a.boton:hover {
+      background: #256608;
+    }
+
+    a.volver {
+      display: inline-block;
+      margin-top: 18px;
+      color: #0056b3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.volver:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
