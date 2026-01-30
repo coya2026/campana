@@ -8,58 +8,83 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f0f4f8;
+
+      /* Fondo con imagen */
+      background-image: url("imagenes/coya.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+
+      padding: 20px; /* para que en móvil no quede pegado */
+      box-sizing: border-box;
     }
+
+    /* Capa oscura suave para mejorar lectura */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 0;
+    }
+
     .menu {
+      position: relative;
+      z-index: 1;
+
       text-align: center;
       width: 100%;
-      max-width: 400px;
-      padding: 20px;
+      max-width: 420px;
+      padding: 22px;
+
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      backdrop-filter: blur(2px);
     }
+
     h1 {
-      margin-bottom: 30px;
+      margin: 0 0 22px;
+      color: #222;
     }
+
     .botones {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 12px;
     }
+
     a.boton {
-      padding: 15px;
+      padding: 14px 16px;
       background: #2b7a0b;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-size: 1.05em;
+      display: block;
     }
+
     a.boton:hover {
       background: #256608;
     }
   </style>
 </head>
 <body>
-
   <div class="menu">
     <h1>Campaña de Predicación Coya 2026</h1>
 
     <div class="botones">
-      <a class="boton" href="como-llegar.html">
-        Cómo llegar a Salón de Reino
-      </a>
-
+      <a class="boton" href="como-llegar.html">Cómo llegar a Salón de Reino</a>
       <a class="boton" href="territorios.html">Territorios</a>
-
-       <a class="boton" href="recorridos.html">Recorridos Coya-Rancagua</a>
-
+      <a class="boton" href="recorridos.html">Recorridos Coya-Rancagua</a>
       <a class="boton" href="recordatorio.html">Recordatorio Importante</a>
-
-      </a>
     </div>
   </div>
-
 </body>
 </html>
